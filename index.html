@@ -1,0 +1,53 @@
+<!--
+Pair Program 4 - Form Validation
+SDEV 305
+Rebecca Riffle and Augy Markham
+10/16/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="form" method="get" action="success.html">
+            <h1>Create Account</h1>
+            <label> Name:
+                <input type="text" id="name" placeholder="Enter your name"> 
+                <span id="err-name" class="err">&#9888; Field is required</span>
+            </label>
+
+            <label> Email:
+                <input type="text" id="email" placeholder="you@example.com"> 
+                <span id="err-empty-email" class="err">&#9888; Field is required</span>
+                <span id="err-invalid-email" class="err">&#9888; Invalid email format</span>
+            </label>
+
+            <label> Password:
+                <input type="password" id="pass"> 
+                <span id="err-password-init" class="err">&#9888; Please make sure your password has at least 8 characters</span>
+            </label>
+
+            <label> Confirm Password:
+                <input type="password" id="pass-conf"> 
+                <span id="err-password-second" class="err">&#9888; Field is required</span>
+                <span id="err-password-mismatch" class="err">&#9888; Passwords must match</span>
+            </label>
+
+            <label id="agreement"> 
+                <input type="checkbox" id="agree"> I agree to the terms
+                <span id="err-check" class="err">&#9888; Field is required</span>
+            </label>
+
+            <button type="submit">Submit</button>
+        
+        </form>
+    </main>
+</body>
+</html>

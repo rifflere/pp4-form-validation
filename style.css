@@ -1,0 +1,53 @@
+body, button {
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+    color: white;
+}
+
+form {
+    margin: auto 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color:#F65950;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    padding:  0 0.5em;
+    /* border: 1px solid black; */
+}
+
+label {
+    display:block;
+    margin: 1em;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    border-top: 2px solid black;
+}
+
+#agreement input {
+    display: inline;
+}
+
+.err {
+    display: none;
+    color: black;
+}
+
+button {
+    font-weight: bold;
+    background-color:black;
+    color: white;
+    margin-left: 50%;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-radius: 10px;
+}
